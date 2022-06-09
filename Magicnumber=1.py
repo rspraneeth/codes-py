@@ -10,13 +10,13 @@ def sum_num(num):
         num[i] = int(num[i])
     num = str(sum(num))
 
-    if len(num) != 1:
-        sum_num(num)
-    elif len(num) == 1:
+    if len(num) == 1:
         if num == '1':
             print("Magic number")
         else:
             print("Not a magic number")
+    else:
+        sum_num(num)
 
 sum_num(number)
 
@@ -29,4 +29,3 @@ if int(number) % 9 == 1:
 else:
     print("Not a magic number")
 
-print("This is magic number program in pyhton")
