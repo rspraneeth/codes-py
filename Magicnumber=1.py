@@ -28,3 +28,5 @@ if int(number) % 9 == 1:
     print("Magic number")
 else:
     print("Not a magic number")
+
+print("This is magic number program in pyhton")
