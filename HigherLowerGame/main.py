@@ -2,19 +2,15 @@ from art import logo, vs
 from game_data import data
 from random import choice
 print(logo)
-def check_b_equals_a(a, b):
-    if b == a:
-        b = choice(data)
-        check_b_equals_a(a, b)
-    return b
 
 a_person = choice(data)
 scr = 0
 
 # check_b_equals_a(a, b)
 def game(a, score):
-    b = choice(data)
-    b = check_b_equals_a(a, b)
+    b = a
+    while b == a:
+        b = choice(data)
     print(f"Compare A: {a['name']}, a {a['description']}, from {a['country']}")
     print(vs)
     print(f"Compare B: {b['name']}, a {b['description']}, from {b['country']}")
@@ -37,4 +33,3 @@ def game(a, score):
             print(f"Sorry, that's wrong! Final score: {score} ")
 
 game(a_person, scr)
-
