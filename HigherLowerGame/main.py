@@ -2,11 +2,9 @@ from art import logo, vs
 from game_data import data
 from random import choice
 print(logo)
-
 a_person = choice(data)
 scr = 0
 
-# check_b_equals_a(a, b)
 def game(a, score):
     b = a
     while b == a:
@@ -31,5 +29,4 @@ def game(a, score):
             game(a, score)
         else:
             print(f"Sorry, that's wrong! Final score: {score} ")
-
 game(a_person, scr)
