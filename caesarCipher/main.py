@@ -6,7 +6,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 print(logo)
 is_continuing = True
 while is_continuing:
-    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    direction = input("Type 'encode' to encrypt or type 'decode' to decrypt your message:\n")
     text = input("Type your message(anything other than alpha won't be ciphered):\n").lower()
     shift = int(input("Type the shift number:\n"))
 
