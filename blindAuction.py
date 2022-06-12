@@ -24,7 +24,7 @@ def max_bid(bidders_list):
             max_c = bidders_list[name_user]
             winner = name_user
 
-    print(f"winner is {winner} with bid amount of {max_c}")
+    print(f"The winner is {winner} with a bid amount of {max_c}")
 
 
 while more_bid == 'y':
