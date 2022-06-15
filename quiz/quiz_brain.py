@@ -12,13 +12,11 @@ class QuizBrain:
 
         if a == self.question_list[self.question_number].answer.lower():
             self.score += 1
-            print("You got it right")
-            print(f"The correct answer is {self.question_list[self.question_number].answer.lower()}")
-            print(f"Your current score is {self.score}/{self.question_number + 1}")
+            print("You got it right.")
         else:
-            print("You got it wrong")
-            print(f"The correct answer is {self.question_list[self.question_number].answer.lower()}")
-            print(f"Your current score is {self.score}/{self.question_number + 1}")
+            print("You got it wrong.")
+        print(f"The correct answer is {self.question_list[self.question_number].answer}.")
+        print(f"Your current score is {self.score}/{self.question_number + 1}.\n\n")
         self.question_number += 1
 
     def next_question(self):

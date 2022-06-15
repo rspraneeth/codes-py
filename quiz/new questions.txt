@@ -1,0 +1,5 @@
+https://opentdb.com/
+
+use this website->API->generate url which consists of questions dict in json format
+
+This program asks questions in our dictionary based on users answer true/false score is generated
